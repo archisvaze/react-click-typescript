@@ -1,13 +1,131 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #0f0f0f;
+  color: white;
+  overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards-container {
+  margin: 20px 5px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+input{
+  height: 30px;
+  padding: 20px 15px;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.card {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 380px;
+  justify-content: space-between;
+  transition: 0.3s;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(31, 31, 31);
+}
+
+/* .card:hover {
+  transform: scale(1.03);
+  background-color: rgb(31, 31, 31);
+} */
+
+.card img {
+  width: 280px;
+  border-radius: 5px;
+}
+
+.stats-container {
+  display: flex;
+  gap: 10px;
+}
+
+.stats-container p {
+  font-size: 14px;
+  color: rgb(230, 230, 230);
+}
+
+.vote-btn {
+  height: 30px;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(70, 70, 70);
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vote-btn:hover {
+  background-color: rgb(90, 90, 90);
+}
+
+
+.table{
+  padding: 10px;
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.table-headers{
+  display: flex;
+  background-color: rgb(37, 37, 37);
+  padding: 5px 0;
+}
+.table-headers h4{
+  width: 33.33%;
+  text-align: center;
+}
+.votes-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.vote{
+  margin: 5px 0;
+  display: flex;
+  padding: 5px 0;
+}
+
+.vote p{
+  width: 33.33%;
+  text-align: center;
 }
